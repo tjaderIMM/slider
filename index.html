@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slajder Obrazów</title>
+    <title>Slider z tekstem i obrazkiem</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="slider">
         <div class="slides">
-            <img src="./IMM-O-mediach-wiemy-wszystko.png" alt="Slajd 1">
-            <img src="./IMM-O-mediach-wiemy-wszystko.png" alt="Slajd 2">
-            <img src="./IMM-O-mediach-wiemy-wszystko.png" alt="Slajd 3">
-        </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-    </div>
+            <div class="slide">
+                <div class="text">
 
+                    <h2>Prowadź skuteczne działania media relations z mediaContact! </h2>
+                    <div>Docieraj do ponad 17 tys. dziennikarzy i influencerów ze wszystkich rodzajów mediów i korzystaj ze stale aktualizowanej bazy kontaktów.
+
+                        Publikuj informacje w wirtualnym biurze prasowym i sprawdzaj na bieżąco efekty  prowadzonych media relations.  
+                    </div>
+                </div>
+                   
+                <div class="image"><img src="https://www.imm.com.pl/wp-content/uploads/2024/03/baza-dziennikarzy-MediaContact.png" alt="Obrazek 1"></div>
+            </div>
+            <div class="slide">
+                <div class="text">
+                    <h2>Podejmuj świadome i strategiczne decyzje w zakresie sponsoringu sportowego dzięki raportom IMM! </h2>
+                    <div>Badaj medialności osób, kampanii lub wydarzeń, które sponsorujesz oraz weryfikuj najskuteczniejsze sposoby i formy ekspozycji.
+
+                        Zaprezentuj swój potencjał nowym sponsorom, a obecnym precyzyjnie raportuj efektywność dotychczasowych wspólnych działań.   
+                    </div>
+                </div>
+                <div class="image"><img src="https://images.assets-landingi.com/uc/e3ff0708-35a6-433c-b8eb-0b4beb57fc4b/SportowiecIMM.png" alt="Obrazek 2"></div>
+            </div>
+            <div class="slide">
+                <div class="text">
+                    <h2>Monitoruj pełną treść tysięcy podcastów na Platformie!  </h2>
+                    <div>Korzystaj z jedynego w Polsce kompleksowego monitoringu podcastów. Z IMM będziesz monitorować pełną treść audio, a nie tylko opis podcastu czy tagi.
+
+                        Otrzymuj dostęp do pełnej transkrypcji podcastu, w której wyróżnione będą marki lub projekty, które monitorujesz.  
+                    </div>
+                </div>
+                <div class="image"><img src="https://www.imm.com.pl/wp-content/uploads/2024/07/Monitoring-podcastow-1024x576.png" alt="Obrazek 3"></div>
+            </div>
+            <div class="slide">
+                <div class="text">
+                    <h2>Rozwijaj swoje kompetencje i poznaj monitoring mediów w praktyce!  </h2>
+                    <div>Weź udział w bezpłatnym szkoleniu online, na którym nasi eksperci opowiedzą Ci, jak krok po kroku korzystać z narzędzi IMM.
+
+                        Dowiedz się, jak ułatwiać i przyspieszyć sobie pracę przy planowaniu i weryfikacji działań z pełnego zakresu komunikacji marketingowej.  
+                    </div>
+                </div>
+                <div class="image"><img src="https://www.imm.com.pl/wp-content/uploads/2024/03/szkolenie-monitoring-mediow.jpg" alt="Obrazek 4"></div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

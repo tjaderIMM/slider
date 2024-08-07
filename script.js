@@ -1,17 +1,19 @@
-let currentSlide = 0;
+let currentIndex = 0;
 
-function changeSlide(direction) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = slides.children.length;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
 
-    currentSlide += direction;
+function showSlide(index) {
+    const newTransformValue = -index * 100 + '%';
+    slides.style.transform = `translateX(${newTransformValue})`;
+}
 
-    if (currentSlide < 0) {
-        currentSlide = totalSlides - 1;
-    } else if (currentSlide >= totalSlides) {
-        currentSlide = 0;
-    }
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+}
 
-    const newTransformValue = `translateX(-${currentSlide * 100}%)`;
-    slides.style.transform = newTransformValue;
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
 }
