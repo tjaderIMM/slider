@@ -16,7 +16,7 @@ body {
     box-shadow: 0px 0px 6px 0px rgba(20, 119, 142, 0.28);
     border-radius: 10px !important;
     background-color: white;
-    width: 1100px;
+    width: 1130px;
 }
 
 .slides {
@@ -27,12 +27,12 @@ body {
 .slide {
     display: flex;
     min-width: 100%;
-    height: 700px;
+    height: 570px;
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .text {
@@ -102,4 +102,18 @@ body {
     font-size: 18px;
     line-height: 32px;
     font-weight: 400;
+}
+.btn-more{
+    padding: 0 35px 0 35px;
+    background-color: rgb(245, 130, 34);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 15px !important;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #fff;
+    height: 52px;
+    line-height: 52px;
 }
