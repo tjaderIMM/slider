@@ -7,6 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #def6f7;
+    flex-direction: column;
 }
 
 .slider {
@@ -95,6 +96,8 @@ body {
     line-height: 40px;
     font-weight: 700;
     color: #002856 !important;
+    width: 100%;
+    text-align: left;
 }
 .paragraf {
     color: #323336;
@@ -116,4 +119,37 @@ body {
     color: #fff;
     height: 52px;
     line-height: 52px;
+}
+.div-btn{
+    width: 100%;
+    display: flex;
+}
+.dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: black;
+  }
+  @media only screen and (max-width: 1900px) {
+  .slider {
+    width: 80%;
+    height: 700px;
+  }
+
+  .slide{
+    padding: 20px;
+  }
 }
