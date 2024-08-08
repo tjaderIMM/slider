@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -32,7 +33,7 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    justify-content: center;
+    
     padding: 30px;
 }
 
@@ -43,7 +44,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+
     font-size: 1.5em;
 }
 
@@ -64,13 +65,21 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
     font-size: 2em;
     padding: 10px;
     cursor: pointer;
     z-index: 2;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 15px !important;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #fff;
 }
 
 .button.prev {
@@ -82,14 +91,15 @@ body {
 }
 
 .button:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.box{
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .h2 {
     font-family: Montserrat;
     font-size: 30px;
@@ -98,7 +108,9 @@ body {
     color: #002856 !important;
     width: 100%;
     text-align: left;
+    margin: 0;
 }
+
 .paragraf {
     color: #323336;
     font-family: Montserrat;
@@ -106,7 +118,8 @@ body {
     line-height: 32px;
     font-weight: 400;
 }
-.btn-more{
+
+.btn-more {
     padding: 0 35px 0 35px;
     background-color: rgb(245, 130, 34);
     text-decoration: none;
@@ -120,16 +133,19 @@ body {
     height: 52px;
     line-height: 52px;
 }
-.div-btn{
+
+.div-btn {
     width: 100%;
     display: flex;
 }
+
 .dots {
     text-align: center;
-    margin-top: 10px;
-  }
-  
-  .dot {
+    
+    margin-bottom: 10px;
+}
+
+.dot {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -138,18 +154,19 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .dot.active {
-    background-color: black;
-  }
-  @media only screen and (max-width: 1900px) {
-  .slider {
-    width: 80%;
-    height: 700px;
-  }
+}
 
-  .slide{
-    padding: 20px;
-  }
+.dot.active {
+    background-color: black;
+}
+
+@media only screen and (max-width: 1900px) {
+    .slider {
+        width: 80%;
+        height: 700px;
+    }
+
+    .slide {
+        padding: 20px;
+    }
 }
