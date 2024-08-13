@@ -53,13 +53,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 289px;
+    
 }
 
 .image img {
-    width: 100%;
-    height: auto;
     display: block;
+    height: 289px;
 }
 
 .button {
