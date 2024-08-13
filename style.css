@@ -29,7 +29,7 @@ body {
 .slide {
     display: flex;
     min-width: 100%;
-    height: 570px;
+    /* height: 570px; */
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
